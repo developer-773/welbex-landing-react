@@ -2,7 +2,6 @@ import React from 'react'
 import { StyledHeader, StyledHeaderDesc, StyledHeaderItem, StyledHeaderLeft, StyledHeaderLeftBox, StyledHeaderLink, StyledHeaderList, StyledHeaderRight, StyledHeaderSocialItem, StyledHeaderSocialLink, StyledHeaderSocialList, StyledHeaderWrap, StyledLink, StyledTelLink } from './header.styles'
 import {Logo} from "../../index"
 import { StyledContainer, TelegramIcon, ViberIcon, WhatsappIcon } from '../../../assets'
-import "./test.css"
 import { v4 as uid } from 'uuid'
 
 export const Header = () => {
