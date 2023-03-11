@@ -1,0 +1,7 @@
+export {FontStyles} from "./styles/fontStyle"
+export {GlobalStyle} from "./styles/GlobalStyle"
+export {StyledContainer} from "./styles/container"
+export {device as Device} from "./styles/sizes"
+export {TelegramIcon} from "./images/images"
+export {ViberIcon} from "./images/images"
+export {WhatsappIcon} from "./images/images"

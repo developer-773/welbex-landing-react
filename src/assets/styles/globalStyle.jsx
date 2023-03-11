@@ -1,4 +1,8 @@
 import { createGlobalStyle } from "styled-components";
+import { Device } from "..";
+import bgDesktop from "../images/bg-desktop1.png"
+import bgMobile from "../images/bg-mobile1.png"
+import { device } from "./sizes";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -218,10 +222,6 @@ template {
   box-sizing: inherit;
 }
 
-html{
-  height: 100%;
-  box-sizing: border-box;
-}
 
 img{
   display: block;
@@ -244,19 +244,27 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Jost";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background-color: #f7f8fd;
-  /* font-family: "Roboto", "Arial", sans-serif; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
-  /* line-height: var(--main-line-height); */
+  background-color:  #0E1014;
+  @media ${device.tablet} {
+    background-image: url(${bgDesktop});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @media ${device.laptop} {
+    background-position: calc(30% - 50px) calc(1% + 1px);
+    background-size:cover;
+  }
+
 }
 
 /* STICKY-FOOTER */
-.site-main{
-  flex-grow: 1;
+main{
+  min-height: 80vh;
 }
 
 `;
